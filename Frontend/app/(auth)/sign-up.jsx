@@ -2,11 +2,10 @@ import { useState } from "react";
 import { Text, TextInput, TouchableOpacity, View } from "react-native";
 import { useSignUp } from "@clerk/clerk-expo";
 import { useRouter } from "expo-router";
-
+import { styles } from "@/styles/auth.styles.js";
 import { Ionicons } from "@expo/vector-icons";
 import { COLORS } from "../../constants/colors";
 import { Image } from "expo-image";
-import { styles } from "@/styles/auth.styles";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 
 export default function SignUpScreen() {
@@ -109,7 +108,6 @@ export default function SignUpScreen() {
       contentContainerStyle={{ flexGrow: 1 }}
       enableOnAndroid={true}
       enableAutomaticScroll={true}
-      //   extraScrollHeight={10}
     >
       <View style={styles.container}>
         <Image

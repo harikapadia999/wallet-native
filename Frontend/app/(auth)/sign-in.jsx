@@ -3,9 +3,9 @@ import { Link, useRouter } from "expo-router";
 import { Text, TextInput, TouchableOpacity, View, Image } from "react-native";
 import { useState } from "react";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
+import { styles } from "../../styles/auth.styles";
 import { Ionicons } from "@expo/vector-icons";
 import { COLORS } from "../../constants/colors";
-import { styles } from "@/styles/auth.styles";
 
 export default function Page() {
   const { signIn, setActive, isLoaded } = useSignIn();
